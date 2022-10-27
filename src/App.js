@@ -4,11 +4,6 @@ import './index.scss';
 function App() {
   const [open, setOpen] = React.useState(false);
 
-  const tagName = ["overlay animated"];
-  if (open) {
-    tagName.concat("show").join(' ');
-  }
-
   return (
     <div className="App">
       <button onClick={() => setOpen(true)} className="open-modal-btn">✨ Открыть окно</button>   
